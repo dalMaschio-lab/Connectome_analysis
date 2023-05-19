@@ -21,7 +21,7 @@ Investigating how the fraction of Giant Connected component and No. of connected
 *undirected_directed_analysis.ipynb*<br />
 Code for analysing the and computing the network properties for both undirected and directed network of larval zebrafish.
 
-*Leiden_community_detection*<br />
+*Leiden_community_detection.ipynb*<br />
 Code for finding the modules(or communities, averaged over 10^4 times) of either directed or undirected network using Leiden community detection algorithm. 
 
 *chord_plots.ipynb*<br />
