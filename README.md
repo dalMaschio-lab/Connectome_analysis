@@ -2,7 +2,7 @@
 
 Notebooks for the analysis of the paper "A network-based method for extracting the organization of brain-wide circuits from reconstructed connectome datasets".
 
-At the following [link](https://drive.google.com/drive/folders/1AsEaiju3l62fbwv-SrANfvTJyCqwd_4N?usp=sharing) are available the complete dataset modular structures. 
+At the following [link](https://drive.google.com/drive/folders/1AsEaiju3l62fbwv-SrANfvTJyCqwd_4N?usp=sharing) are available the complete dataset modular structures to download and open in a web browser. 
 
 ### Folder *notebooks*
 Consists of .ipynb jupyter notebooks containing python code for analyzing Connectome data of larval zebrafish atlas as well as EM drosophilia<br />
