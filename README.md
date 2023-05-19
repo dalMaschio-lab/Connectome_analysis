@@ -24,7 +24,7 @@ Code for analysing the and computing the network properties for both undirected 
 *Leiden_community_detection*<br />
 Code for finding the modules(or communities, averaged over 10^4 times) of either directed or undirected network using Leiden community detection algorithm. 
 
-*chord_plots.ipynb*
+*chord_plots.ipynb*<br />
 R code for visualizing using chord plots, the modular structures of both directed and undirected communities of zebrafish. Also, visualising the relation of Leiden communities/modules of these networks with respect to preexisting anatomical regions of larval zebrafish.  
 
 
