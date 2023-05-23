@@ -1,6 +1,6 @@
 # A network-based method for extracting the organization of brain-wide circuits from reconstructed connectome datasets 
 
-Notebooks for the analysis of the paper "A network-based method for extracting the organization of brain-wide circuits from reconstructed connectome datasets".
+Notebooks for the analysis of the paper "A network-based method for extracting the organization of brain-wide circuits from reconstructed connectome datasets" [link](https://www.biorxiv.org/content/10.1101/2023.05.21.541471v1)
 
 At the following [link](https://drive.google.com/drive/folders/1AsEaiju3l62fbwv-SrANfvTJyCqwd_4N?usp=sharing) are available the complete dataset modular structures to download and open in a web browser. 
 
