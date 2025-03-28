@@ -1,1 +1,2 @@
-
+*drosophilia_network_analysis.ipynb*<br/>
+uses the EM drosophilia directed edges data *traced-total-connections.csv* which can be obtained from [link](https://www.janelia.org/project-team/flyem/hemibrain --> v1.2 release found in the page) or directly from [link](https://storage.cloud.google.com/hemibrain/v1.2/exported-traced-adjacencies-v1.2.tar.gz). It outputs communities and sub-communities(communities within communities), results can be found in **EM_communities**
