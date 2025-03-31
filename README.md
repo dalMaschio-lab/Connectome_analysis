@@ -8,7 +8,7 @@ At the following [link](https://drive.google.com/drive/folders/1AsEaiju3l62fbwv-
 Consists of .ipynb jupyter notebooks containing python code for analyzing Connectome data of larval zebrafish atlas.<br />
 
 At the following link [connectome_analysis](https://zenodo.org/records/15102704?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjliMGQyMDczLTExNTktNDQ2ZS05NmI0LWVhMWJhODQ0N2E0NSIsImRhdGEiOnt9LCJyYW5kb20iOiJiMTg1NjI1ZGNkMGMyYTk1NDVjNDQ3ZDkzMTg4NmMxYiJ9.CTW09V7S8EDh_v7JupktYH5-yJ6GpYNhumSfZee56R2hOezkIQtYMwsb2BxBBrIZm1x5X8A_KOzetTpDeziSlA) in the folder **zebrafish data & analysis.zip** there are following folders: 
-1. mapzebrain - Aligned neurons dataset
+1. mapzebrain - Aligned neurons dataset (here is the zebrafish light microscopy data)
 2. mapzebrain - Aligned neurons dataset with strahler_lastcolumn
 3. strhl_num_1_dataset
 4. dendrites_axonTermials
