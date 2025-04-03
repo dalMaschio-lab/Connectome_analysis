@@ -9,6 +9,8 @@ The folder **EM_communities** consists of:
                                                                                                 
 
 
+
+
 *janelia_subnetworks_reconstruction.ipynb*<br/>
 In this jupyter notebook, neuromorphological data of each neuron is downloaded in .swc format using [NAVIS](https://navis-org.github.io/navis/) python library and grouped according to communities obtained from EM drosophilia. This jupyter notebook contains code to download swc information of neurons, compute strahler order of neurites/branch points of neuron, compute threshold distance to classify axon terminals and dendrites, using proximity range 1um and 5um reconstruct network using proposed methodology. Finally we apply leiden community detection algorithm to capture the modules within each reconstructed (sub-)networks. 
 
@@ -21,4 +23,26 @@ Each folder **janelia_Comm(num)** consists of:
 4. neu_attrJanelia_updated.csv - same as neu_attrJanelia.csv but with entries of last column being threshold distance(distance value that divides axon terminals and dendrites based on distance distribution with soma) computed for each neuron.
 5. network_1.0um.txt, network_5.0um.txt - network reconstructed using our proposed methodology with proximity ranges 1 um and 5 um respectively.
 6. SubComm(num)_reconstructed_1.0um.csv, SubComm(num)_reconstructed_5.0um.csv - these files contains modules obtained by applying leiden community detection algorithm to reconstructed networks network_1.0um.txt, network_5.0um.txt respectively.
+ 
+
+
+
+
+
+
+*ARI_NMI_random_zscore.ipynb*<br/>
+1. Considers reconstructed networks(both 1um and 5um prox. range) from **janelia_Comm(num)** and outputs+stores 100 random networks which are link randomised and weight randomised. These networks are found in **random network.zip** at [Connectome_analysis](https://zenodo.org/records/15102704?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjliMGQyMDczLTExNTktNDQ2ZS05NmI0LWVhMWJhODQ0N2E0NSIsImRhdGEiOnt9LCJyYW5kb20iOiJiMTg1NjI1ZGNkMGMyYTk1NDVjNDQ3ZDkzMTg4NmMxYiJ9.CTW09V7S8EDh_v7JupktYH5-yJ6GpYNhumSfZee56R2hOezkIQtYMwsb2BxBBrIZm1x5X8A_KOzetTpDeziSlA). directory location: janelia_Comm(num) --> link random or weight random --> network_1.0um or network_5.0um
+2. Applies Leiden community detection algorithm on the random networks. results are stored in directory location: janelia_Comm(num) --> link random or weight random --> network_1.0um_modules or network_5.0um_modules
+3. Computes ARI/NMI between partition of module (num) of EM drosophilia(found from averageSubComm(num)_drosophilia.csv from directory **EM_communities**) and partition of module (num) of reconstructed network(found at: **random network** --> janelia_Comm(num) --> link random or weight random --> network_1.0um_modules or network_5.0um_modules)
+4. Computes ARI/NMI of each realisation of the random networks themselves.
+5. Computes Z-scores of ARI/NMI for each module and corresponding 100 random networks, plots the z-score as stripplot, results can be found from folder **images**
+
+
+
+
+
+
+
+
+
 
