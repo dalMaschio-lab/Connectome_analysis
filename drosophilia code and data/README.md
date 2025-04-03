@@ -31,9 +31,13 @@ Each folder **janelia_Comm(num)** consists of:
 
 
 *ARI_NMI_random_zscore.ipynb*<br/>
+
+This jupyter notebook contains code for the following:
+
+
 1. Considers reconstructed networks(both 1um and 5um prox. range) from **janelia_Comm(num)** and outputs+stores 100 random networks which are link randomised and weight randomised. These networks are found in **random network.zip** at [Connectome_analysis](https://zenodo.org/records/15102704?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjliMGQyMDczLTExNTktNDQ2ZS05NmI0LWVhMWJhODQ0N2E0NSIsImRhdGEiOnt9LCJyYW5kb20iOiJiMTg1NjI1ZGNkMGMyYTk1NDVjNDQ3ZDkzMTg4NmMxYiJ9.CTW09V7S8EDh_v7JupktYH5-yJ6GpYNhumSfZee56R2hOezkIQtYMwsb2BxBBrIZm1x5X8A_KOzetTpDeziSlA). directory location: janelia_Comm(num) --> link random or weight random --> network_1.0um or network_5.0um
 2. Applies Leiden community detection algorithm on the random networks. results are stored in directory location: janelia_Comm(num) --> link random or weight random --> network_1.0um_modules or network_5.0um_modules
-3. Computes ARI/NMI between partition of module (num) of EM drosophilia(found from averageSubComm(num)_drosophilia.csv from directory **EM_communities**) and partition of module (num) of reconstructed network(found at: **random network** --> janelia_Comm(num) --> link random or weight random --> network_1.0um_modules or network_5.0um_modules)
+3. Computes ARI/NMI between partition of module (num) of EM drosophilia(found from averageSubComm(num)_drosophilia.csv from directory **EM_communities**) and partition of module (num) of reconstructed network(found at: **random network** --> janelia_Comm(num) --> link random or weight random --> network_1.0um_modules or network_5.0um_modules). results can be found from excel file *ari_nmi_all_modules.ods*.
 4. Computes ARI/NMI of each realisation of the random networks themselves.
 5. Computes Z-scores of ARI/NMI for each module and corresponding 100 random networks, plots the z-score as stripplot, results can be found from folder **images**
 
