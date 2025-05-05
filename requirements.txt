@@ -1,0 +1,13 @@
+igraph
+leidenalg
+matplotlib
+matplotlib-inline
+multiprocess
+navis
+networkx
+numba
+numpy
+pandas
+python-louvain
+scipy
+seaborn
